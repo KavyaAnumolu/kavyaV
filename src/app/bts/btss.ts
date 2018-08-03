@@ -3,5 +3,6 @@ export interface Itae{
     name:string,
     title:string,
     imageURL:string
+   
 
 }
