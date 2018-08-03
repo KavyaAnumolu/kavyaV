@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Itae } from './btss';
 // import { Taehyung } from '../taehyung';
 
 @Component({
@@ -12,7 +13,7 @@ export class BtsComponent implements OnInit {
  imageWidth:number=50;
  imageMargin:number=2;
  kavya:string='Members';
-taehyung:any[]=[
+taehyung:Array<Itae>=[
 
   {
     id:94,
