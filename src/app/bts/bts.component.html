@@ -1,0 +1,38 @@
+<!-- <h1>{{text}}</h1> -->
+<!-- <h2>{{taehyung.name | uppercase}} </h2> -->
+<head>
+<title>
+Welcome to BTS 
+</title>
+</head>
+<body>
+    <div class="c">
+            <h3>{{text|uppercase}}</h3>
+    </div>
+
+<div class="bts">
+    <button type="button" (click)='jimin()'  class="btn btn-success btn-block" >{{showImage ? 'Hide' : 'Show'}}  image</button><br>
+    <!-- <button type="button" class="btn btn-success btn-block" ></button>
+    <button type="button" class="btn btn-primary btn-block"></button>
+     <button type="button" class="btn btn-primary btn-block" </button> -->
+</div>
+<br>
+<div class="a">
+        <button type="button" class="btn btn-success btn-block" >Get More Info</button><br>
+        <input type="text" [(ngModel)]='kavya'/><br>
+</div>
+
+<div class="b">
+        <h4>Search by:{{kavya}}</h4>
+</div>
+<div class="v" *ngFor='let tae of taehyung'>
+    {{tae.name}}
+     <div>
+         <img  *ngIf='showImage'
+          [src]='tae.imageURL'
+          [title]='tae.title'
+            [style.width.px]='imageWidth'
+            [style.margin.px]='imageMargin'>
+    </div>
+</div>
+</body>
